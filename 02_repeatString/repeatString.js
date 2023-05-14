@@ -3,6 +3,8 @@ const repeatString = function(string = "hey", num = 10) {
     for (let i = 0; i < num; i++) {
         repeatString = repeatString + string;
     }
+
+    return repeatString;
 };
 
 console.log(repeatString("hey", 5));

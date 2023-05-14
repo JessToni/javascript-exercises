@@ -1,5 +1,8 @@
-const repeatString = function() {
-
+const repeatString = function(string, num) {
+    let repeatedString = "";
+    for (let i = 0; i < num; i++) {
+        repeatedString = repeatedString + string;
+    }
 };
 
 // Do not edit below this line

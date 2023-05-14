@@ -5,5 +5,7 @@ const repeatString = function(string, num) {
     }
 };
 
+console.log(repeatString("hey", 5));
+
 // Do not edit below this line
 module.exports = repeatString;

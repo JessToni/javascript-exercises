@@ -2,7 +2,7 @@ const repeatString = function(string = "hey", num = 10) {
     let repeatString = new String();
     
     for (let i = 0; i < num; i++) {
-        if (num <= 0) {
+        if (num < 0) {
             repeatString = "";
             break;
         }

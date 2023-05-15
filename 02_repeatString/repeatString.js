@@ -3,6 +3,7 @@ const repeatString = function(string = "hey", num = 10) {
     
     for (let i = 0; i < num; i++) {
         if (num <= 0) {
+            repeatString = "";
             break;
         }
         repeatString = repeatString + string;

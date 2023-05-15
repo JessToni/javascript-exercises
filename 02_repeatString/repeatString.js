@@ -1,15 +1,11 @@
 const repeatString = function(string = "hey", num = 10) {
-    let repeatString = new String();
+let repeatString = "";
     
-    for (let i = 0; i < num; i++) {
-        if (num < 0) {
-            repeatString = "";
-            break;
-        }
-        repeatString = repeatString + string;
-    }
+for (let i = 0; i < num; i++) {
+    repeatString = repeatString + string;
+}
 
-    return repeatString;
+return repeatString;
 };
 
 console.log(repeatString("hey", 5));

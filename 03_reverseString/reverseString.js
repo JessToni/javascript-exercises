@@ -1,10 +1,8 @@
 const reverseString = function(string = "hey") {
     let reversedString = "";
-    let reverseCount = -1;
     
-    for (let i = 0; i < string.length; i++) {
-        reversedString += string[reverseCount];
-        reverseCount--;
+    for (let i = string.length -1; i >= 0; i--) {
+        reversedString += string[i];
     }
 
     return reversedString;

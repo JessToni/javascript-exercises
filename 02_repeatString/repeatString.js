@@ -3,14 +3,13 @@ const repeatString = function(string = "hey", num = 10) {
 
     if (num <= 0) {
         return repeatString;
-    } else {
-        for (let i = 0; i < num; i++) {
-            repeatString = repeatString + string;
-
-            return repeatString;
-        }
     }
 
+    for (let i = 0; i < num; i++) {
+        repeatString = repeatString + string;
+    }
+
+    return repeatString;
 };
 
 console.log(repeatString("hey", 5));

@@ -7,7 +7,7 @@ const removeFromArray = function(array, ...args) {
         }
     });
 
-    return array;
+    return newArray;
 };
 
 // Do not edit below this line

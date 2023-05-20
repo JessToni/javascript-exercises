@@ -1,4 +1,8 @@
 const sumAll = function(one, two) {
+    if (isNaN(one) === true || isNaN(two) === true) {
+        return "ERROR"
+    }
+
     let total = 0;
     let start = one;
     let end = two;

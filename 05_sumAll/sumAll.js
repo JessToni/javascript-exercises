@@ -1,5 +1,5 @@
 const sumAll = function(one, two) {
-    if (isNaN(one) === true || isNaN(two) === true) {
+    if (typeof one !== "number" || typeof two !== "number") {
         return "ERROR"
     }
 

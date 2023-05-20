@@ -1,5 +1,5 @@
 const sumAll = function(one, two) {
-    if (typeof one !== "number" || typeof two !== "number") {
+    if (typeof one !== "number" || typeof two !== "number" || one < 0 || two < 0) {
         return "ERROR"
     }
 
@@ -10,8 +10,6 @@ const sumAll = function(one, two) {
     if (one > two) {
         start = two;
         end = one;
-    } else if (one < 0 || two < 0) {
-        return "ERROR"
     }
 
     for (let i = start; i <= end; i++) {

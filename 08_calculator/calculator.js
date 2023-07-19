@@ -43,13 +43,16 @@ const power = function(a,b) {
 };
 
 const factorial = function(num) {
+  let factorial = 1;
 	if (num === 0) {
     return 1;
 
   } else {
-    for (let i = 1; i <= 5; i++) {
-      num = num * i;
+    for (let i = 1; i <= num; i++) {
+      factorial = factorial * i;
     }
+
+    return num;
   }
 };
 

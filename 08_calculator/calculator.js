@@ -14,18 +14,18 @@ const subtract = function(a, b) {
   return difference
 };
 
-const sum = function(...numbers) {
-	let sum = 0;
-  const arr = [];
+const sum = function(arr) {
+  let sum = 0;
 
-  //Place all numbers loaded in the function into an array
-  for (let number of numbers) {
-    arr.push(number);
-  }
+  const initialValue = 0;
 
-  /*for (let contents of arr) {
+  //Adds all the contents of arr
+	const sumWithInitial = arr.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    initialValue
+  );
 
-  }*/
+  return sumWithInitial;
 };
 
 const multiply = function() {

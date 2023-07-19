@@ -52,7 +52,7 @@ const factorial = function(num) {
       factorial = factorial * i;
     }
 
-    return num;
+    return factorial;
   }
 };
 

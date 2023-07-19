@@ -42,8 +42,15 @@ const power = function(a,b) {
   return a ** b;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	if (num === 0) {
+    return 1;
+
+  } else {
+    for (let i = 1; i <= 5; i++) {
+      num = num * i;
+    }
+  }
 };
 
 // Do not edit below this line

@@ -16,7 +16,6 @@ const subtract = function(a, b) {
 
 const sum = function(arr) {
   let sum = 0;
-
   const initialValue = 0;
 
   //Adds all the contents of arr
@@ -28,8 +27,15 @@ const sum = function(arr) {
   return sumWithInitial;
 };
 
-const multiply = function() {
+const multiply = function(arr) {
+  let product = 0;
+  const initialValue = 0;
 
+  //Multiplies all of the contents of arr
+  const productWithInitial = arr.reduce (
+    (accumulator, currentValue) => accumulator * currentValue,
+    initialValue
+  )
 };
 
 const power = function() {

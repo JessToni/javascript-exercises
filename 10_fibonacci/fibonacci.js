@@ -1,4 +1,8 @@
 const fibonacci = function(number) {
+    if (typeof number != number) {
+        return "OOPS"
+    }
+
     let arr = [];
     for (let i = 0; i < number; i++) {
         if (arr.length <= 1) {

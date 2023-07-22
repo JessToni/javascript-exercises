@@ -6,7 +6,7 @@ const fibonacci = function(number) {
         } else {
             nextFib = arr[i-1] + arr[i-2];
             arr.push(nextFib);
-            return arr[-1];
+            return arr[i];
         }
     }
 };

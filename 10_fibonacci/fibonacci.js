@@ -1,5 +1,5 @@
 const fibonacci = function(number) {
-    if (typeof number != "number") {
+    if (typeof number != "number" || number < 0) {
         return "OOPS"
     }
 

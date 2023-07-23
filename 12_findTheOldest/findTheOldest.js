@@ -3,14 +3,8 @@ const findTheOldest = function(array) {
     date.getFullYear();
 
     const oldest = array.sort(function(a, b) {
-        if (a.yearOfDeath === undefined) {
-            a.yearOfDeath = date;
-        } else if (b.yearOfDeath === undefined) {
-            b.yearOfDeath = date;
-        }
-
-        const lastPerson = a.yearOfDeath - a.yearOfBirth;
-        const nextPerson = b.yearOfDeath - b.yearOfBirth;
+        const lastPerson = (a.yearOfDeath || date) - a.yearOfBirth;
+        const nextPerson = (b.yearOfDeath || date) - b.yearOfBirth;
 
         return (lastPerson > nextPerson ? -1:1)
     });

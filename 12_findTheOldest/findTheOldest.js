@@ -1,6 +1,6 @@
 const findTheOldest = function(array) {
-    const date = new Date();
-    date.getFullYear();
+    let date = new Date();
+    date = date.getFullYear();
 
     const oldest = array.sort(function(a, b) {
         const lastPerson = (a.yearOfDeath || date) - a.yearOfBirth;
